@@ -1,0 +1,16 @@
+import javax.swing.JOptionPane;
+
+public class Tarea{
+    public static void main(String[] args) {
+        int edad, cedula;
+        String nombre;
+        nombre = JOptionPane.showInputDialog("Ingrese el nombre");
+        edad = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la edad"));
+        cedula = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el número de cédula"));
+
+        JOptionPane.showMessageDialog(null, 
+            "El nombre es: " + nombre +
+            "\nLa edad es: " + edad +
+            "\nLa cédula es: " + cedula);
+    }
+}
